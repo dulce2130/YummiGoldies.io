@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+}
+
+#container {
+    position: relative;
+    background-image: url('wallpaper2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+}
+
+#navbar {
+    background-color: #640D5F !important;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    /* opacity: 0.9;*/
+
+}
+
+#contain {
+    margin-top: 70px;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.white {
+    color: white;
+}
+
+.white:hover {
+    color: #FFB200;
+}
+
+.logo {
+    height: 60px;
+}
+
+a:active {
+    color: #EB5B00;
+}
+
+
+.btn:hover {
+    background: #FFB200;
+}
+
+.btn {
+    outline: white;
+    color: white;
+}
+
+.paraph {
+    color: #3B1C32;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(22, 22, 22, 0.383);
+}
+
+.paraph h1 {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.paraph p {
+    text-align: justify;
+    padding: 5px 30px;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.pink-background {
+    background: #FFB4C2;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f5f3d8ff !important;
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    color: #FFB200;
+    font-size: 24px;
+    font-weight: 700;
+    height: 50px;
+}
+
+.card-text {
+    color: #432E54;
+    font-size: 16px;
+}
+
+.shadow-lg {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.img {
+    background-image: url(../images/team.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+}
+
+.coverImage {
+    text-align: center;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.background-transparent {
+    background: #FDDBBB;
+}
+
+#footer {
+    background-color: #640D5F;
+    color: #FFB200;
+    height: 300px;
+
+}
+
+.info-box {
+    background-color: #833c7f;
+    color: white;
+    transition: transform 0.2s;
+}
+
+.info-box:hover {
+    transform: scale(1.05);
+}
+
+h5 {
+    color: #FFB200;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.contacto {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.txt {
+    background-color: #640D5F;
+    color: #FFB200;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 12px;
+    margin: 0;
+    text-align: center;
+}
+
+#carouselExampleAutoplaying {
+    max-width: 800px;
+    max-height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 35px;
+    border-radius: 20px;
+}
+
+#carouselExampleAutoplaying .carousel-inner img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+
+}
+
+#productos {
+    padding: 40px 0;
+    color: #432E54;
+
+}
+
+.product-card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    margin: 20px;
+    height: 400px;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: #FFB200;
+}
+
+.card-text {
+    color: #432E54;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.price-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #E4003A;
+    background-color: #FFB200;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+.price-text:hover {
+    transform: scale(1.1);
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    color: #7b1a54;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.h3::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #E4003A;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 361px) {
+    #footer {
+        padding: 20px 10px;
+        text-align: center;
+        height: auto;
+    }
+
+    .info-box {
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    .contacto {
+        font-size: 24px;
+    }
+
+    .info-box h5 {
+        font-size: 18px;
+    }
+
+    .info-box p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .txt {
+        font-size: 10px;
+        padding: 5px;
+    }
+}

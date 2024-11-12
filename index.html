@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>YUMMI GOLDIES | Frituras y Botanas</title>
+        <link rel="icon" href="images/iconPage.png" type="image/x-icon">
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="css/main.css">
+
+    </head>
+
+    <body>
+
+        <div id="container">
+
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
+                <div class="container-fluid">
+                    <img src="images/iconPage.png" alt="logo" class="logo">
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse"
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link  poppins-semibold white"
+                                    aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link poppins-semibold white"
+                                    href="#equipo">Equipo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link poppins-semibold white"
+                                    href="#footer">Contacto</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle poppins-semibold white"
+                                    href="#" role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Productos
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item"
+                                            href="#gomitas">Gomitas</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="#chips">Chips</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="#deshidratados">Deshidratados</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="#granos">Granos</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex" onsubmit="event.preventDefault(); filterProducts();" role="search">
+                            <input id="navbarSearch" class="form-control me-2" type="search" placeholder="Busca productos..." aria-label="Search">
+                            <button class="btn btn-outline-success" type="button" onclick="filterProducts()">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="contain">
+
+                <section id="description">
+                    <div class="paraph pink-background">
+                        <h1 class="poppins-extrabold">¡Bienvenid@s!</h1>
+                        <br>
+                        <p>
+                            Somos una empresa dedicada a la producción y
+                            comercialización de gomitas y botanas de alta
+                            calidad.
+                            Llevamos en el mercado desde el 2020 y hacemos
+                            snacks
+                            adictivos y deliciosos donde se pone todo el corazón
+                            en
+                            todo lo que se vende.
+                            Nuestro portafolio incluye una variedad de sabores,
+                            formas,
+                            preparados y texturas, diseñados para satisfacer los
+                            gustos
+                            de personas de todas las edades. Nos caracterizamos
+                            por
+                            nuestro compromiso con la innovación, utilizando
+                            ingredientes cuidadosamente seleccionados para
+                            asegurar
+                            la
+                            frescura y el sabor en cada bocado. Con un enfoque
+                            en la
+                            experiencia del cliente, nos esforzamos por ofrecer
+                            productos deliciosos y seguros, que aporten momentos
+                            de
+                            alegría y disfrute en cada ocasión. Así mismo
+                            buscamos
+                            que
+                            nuestro empaques sean hechos con la menor cantidad
+                            de
+                            plástico que puedan afectar al planeta.
+                        </p>
+                    </div>
+                </section>
+
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/carrussel1.jpg" class="d-block w-100 img-car" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/carrussel2.webp" class="d-block w-100 img-car" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/carrussel3.webp" class="d-block w-100 img-car" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                <section id="mision-vision-objetivo" class="container mt-5">
+
+                    <div class="row text-center">
+                        <div class="col-md-4 mb-4">
+                            <div
+                                class="card bg-light shadow-lg p-3 mb-5 rounded">
+                                <div class="card-body">
+                                    <h2 class="card-title poppins-semibold"
+                                        id="mision">Misión</h2>
+                                    <p class="card-text">
+                                        Ofrecer a nuestros clientes una diversa
+                                        variedad de gomitas y botanas de calidad
+                                        que
+                                        brinden momentos de alegría y
+                                        satisfacción.
+                                        Como empresa nos comprometemos a
+                                        elaborar
+                                        nuestros productos con los mejores
+                                        ingredientes, enfocándonos en el sabor,
+                                        la
+                                        frescura y la innovación, para
+                                        satisfacer el
+                                        gusto y preferencias de nuestros
+                                        consumidores, con un compromiso de
+                                        responsabilidad y bienestar.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div
+                                class="card bg-light shadow-lg p-3 mb-5 rounded">
+                                <div class="card-body">
+                                    <h2 class="card-title poppins-semibold"
+                                        id="vision">Visión</h2>
+                                    <p class="card-text">
+                                        Ser una empresa líder en el mercado
+                                        comercial en especifico en la venta de
+                                        gomitas y botanas, que seamos
+                                        reconocidos
+                                        por la calidad, diversidad e innovación
+                                        de
+                                        nuestros productos. Nuestra aspiración
+                                        es
+                                        lograr expandirnos a nivel nacional e
+                                        internacional, promoviendo un consumo
+                                        responsable y manteniendo un enfoque
+                                        sostenible que aporte valor a nuestros
+                                        clientes, colaboradores y a la comunidad
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div
+                                class="card bg-light shadow-lg p-3 mb-5 rounded">
+                                <div class="card-body">
+                                    <h2 class="card-title poppins-semibold"
+                                        id="objetivo">Objetivo</h2>
+                                    <p class="card-text">
+                                        Establecernos como una marca de
+                                        confianza y
+                                        preferencia en el mercado de fritutas y
+                                        Snacks manteniendo nuestra presencia en
+                                        puntos de venta clave y realizando
+                                        productos
+                                        innovadores que se adapten a las
+                                        tendencias
+                                        y preferencias de nuestros consumidores.
+                                        Buscamos tener relaciones sólidas con
+                                        nuestros clientes y distribuidores,
+                                        impulsando un crecimiento sostenible y
+                                        responsable, a base del respeto y la
+                                        inclusión.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="equipo">
+                    <div class="img">
+                        <div class="coverImage">
+                            <div class="paraph background-transparent">
+                                <h2>Equipo</h2>
+                                <p>
+                                    Actualmente contamos con un equipo de 50
+                                    empleados dedicados a la producción,
+                                    comercialización, y distribución de nuestros
+                                    productos. A parte se cuenta con 20
+                                    empleados
+                                    más que laboran en 2 sucursales establecidas
+                                    en
+                                    nuestra región.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section id="productos">
+                    <h2 class="text-center poppins-semibold mb-4">Nuestros Productos</h2>
+
+                    <section id="gomitas" class="mb-5 ">
+                        <h3 class="text-center poppins-semibold mb-4 h3">Gomitas</h3>
+                       
+                        <div class="row cardContainer" >
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card shadow-lg">
+                                    <img src="images/aros_durazno.webp" class="card-img-top" alt="Gomita 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title poppins-semibold text-center">Aros de durazno enchilado</h5>
+                                        <p class="card-text text-center">Gomitas de durazno enchilado con chamoy y tajín.</p>
+                                        <p class="card-text text-center price-text">$45.00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card shadow-lg">
+                                    <img src="images/gusanitos_enchilados.webp" class="card-img-top" alt="Gomita 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title poppins-semibold text-center">Gusanitos Enchilados</h5>
+                                        <p class="card-text text-center">Gomita en forma de gusanito enchilados con chamoy y chile piquín</p>
+                                        <p class="card-text text-center price-text">$40.00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card shadow-lg">
+                                    <img src="images/panditas_enchilados.webp" class="card-img-top" alt="Gomita 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title poppins-semibold text-center">Panditas Enchiladas</h5>
+                                        <p class="card-text text-center">Gomita en forma de pandita enchilada con chamoy y chile piquín</p>
+                                        <p class="card-text text-center price-text">$40.00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card shadow-lg">
+                                    <img src="images/tiritas_arcoiris.webp" class="card-img-top" alt="Gomita 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title poppins-semibold text-center">Tiritas Arcoíris Enchiladas</h5>
+                                        <p class="card-text text-center">Gomitas arcoíris aciditas con chamoy y chile piquín</p>
+                                        <p class="card-text text-center price-text">$40.00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card shadow-lg">
+                                    <img src="images/tiritas_mango.webp" class="card-img-top" alt="Gomita 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title poppins-semibold text-center">Tiritas De Mango Enchilado</h5>
+                                        <p class="card-text text-center"> Tiritas de gomita de mango enchilado con chamoy y chile piquín</p>
+                                        <p class="card-text text-center price-text">$45.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                        </div>
+                    </section>
+
+                    <section id="chips" class="mb-5 ">
+                        <h3 class="text-center poppins-semibold mb-4 h3">Chips</h3>
+                       
+                        <div class="row cardContainer" >
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card shadow-lg">
+                                    <img src="images/betabel_adobado.webp" class="card-img-top" alt="Gomita 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title poppins-semibold text-center">betabel_adobado</h5>
+                                        <p class="card-text text-center">Betabel deshidratado con chilito en polvo</p>
+                                        <p class="card-text text-center price-text">$55.00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card shadow-lg">
+                                    <img src="images/jicama_adobada.webp" class="card-img-top" alt="Gomita 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title poppins-semibold text-center">Jícama Adobada</h5>
+                                        <p class="card-text text-center">Jícama deshidratado con chilito en polvo</p>
+                                        <p class="card-text text-center price-text">$40.00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card shadow-lg">
+                                    <img src="images/papas_chedar.webp" class="card-img-top" alt="Gomita 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title poppins-semibold text-center">Papas Chedar</h5>
+                                        <p class="card-text text-center">Crujientes papas con sabor a queso chedar</p>
+                                        <p class="card-text text-center price-text">$40.00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card shadow-lg">
+                                    <img src="images/papas_fuego.webp" class="card-img-top" alt="Gomita 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title poppins-semibold text-center">Papas Fuego</h5>
+                                        <p class="card-text text-center">Crujientes papas super picosas</p>
+                                        <p class="card-text text-center price-text">$55.00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card shadow-lg">
+                                    <img src="images/platano_adobado.webp" class="card-img-top" alt="Gomita 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title poppins-semibold text-center">Plátano Adobado</h5>
+                                        <p class="card-text text-center">Plátano deshidratdo crujiente con delicioso adobo</p>
+                                        <p class="card-text text-center price-text">$45.00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <section id="deshidratados" class="mb-5 ">
+                        <h3 class="text-center poppins-semibold mb-4 h3">Deshidratados</h3>
+                       
+                        <div class="row cardContainer" >
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card shadow-lg">
+                                    <img src="images/pina_enchilada.webp" class="card-img-top" alt="Gomita 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title poppins-semibold text-center">Piña Enchilada</h5>
+                                        <p class="card-text text-center">Deliciosa piña deshidratada con chilito en polvo</p>
+                                        <p class="card-text text-center price-text">$55.00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card shadow-lg">
+                                    <img src="images/arandano_enchilado.webp" class="card-img-top" alt="Gomita 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title poppins-semibold text-center">Arándano Enchilado</h5>
+                                        <p class="card-text text-center">Deliciosos arándanos deshidratados con chilito en polvo</p>
+                                        <p class="card-text text-center price-text">$40.00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card shadow-lg">
+                                    <img src="images/fresa_enchilada.webp" class="card-img-top" alt="Gomita 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title poppins-semibold text-center">Fresa Enchiladar</h5>
+                                        <p class="card-text text-center">Deliciosa fresa deshidratada con chilito en polvo</p>
+                                        <p class="card-text text-center price-text">$40.00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card shadow-lg">
+                                    <img src="images/kiwi_enchilado.webp" class="card-img-top" alt="Gomita 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title poppins-semibold text-center">Kiwi Enchilado</h5>
+                                        <p class="card-text text-center">Deliciosos kiwi deshidratado con chilito en polvo</p>
+                                        <p class="card-text text-center price-text">$55.00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card shadow-lg">
+                                    <img src="images/nopal_enchilado.webp" class="card-img-top" alt="Gomita 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title poppins-semibold text-center">Nopal Enchilado</h5>
+                                        <p class="card-text text-center">Delicioso nopal deshidratado con chilito en polvo</p>
+                                        <p class="card-text text-center price-text">$45.00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <section id="granos" class="mb-5 ">
+                        <h3 class="text-center poppins-semibold mb-4 h3">Granos</h3>
+                       
+                        <div class="row cardContainer" >
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card shadow-lg">
+                                    <img src="images/garapinado.webp" class="card-img-top" alt="Gomita 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title poppins-semibold text-center">Cacahuate Garapiñado</h5>
+                                        <p class="card-text text-center">Deliciosos cacahuates cubiertos de azúcar caramelizada</p>
+                                        <p class="card-text text-center price-text">$25.00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card shadow-lg">
+                                    <img src="images/cacahuate_fuego.webp" class="card-img-top" alt="Gomita 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title poppins-semibold text-center">Cacahuate Fuego</h5>
+                                        <p class="card-text text-center">Deliciosos cacahuates estilo japonés con un toque de fuego</p>
+                                        <p class="card-text text-center price-text">$35.00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card shadow-lg">
+                                    <img src="images/cacahuate_habanero.webp" class="card-img-top" alt="Gomita 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title poppins-semibold text-center">Cacahuate Habanero</h5>
+                                        <p class="card-text text-center">Deliciosos cacahuates estilo japonés con un toque de habanero</p>
+                                        <p class="card-text text-center price-text">$40.00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card shadow-lg">
+                                    <img src="images/nuez_garapinada.webp" class="card-img-top" alt="Gomita 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title poppins-semibold text-center">Nuez Garapiñada</h5>
+                                        <p class="card-text text-center">Deliciosos kiwi deshidratado con chilito en polvo</p>
+                                        <p class="card-text text-center price-text">$55.00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card shadow-lg">
+                                    <img src="images/garbanzo_enchilado.jpg" class="card-img-top" alt="Gomita 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title poppins-semibold text-center">Garbanzo Enchilado</h5>
+                                        <p class="card-text text-center">Deliciosos garbanzos enchilados con chilito en polvo</p>
+                                        <p class="card-text text-center price-text">$35.00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                    
+                    
+                </section>
+
+            </div>
+
+            <footer id="footer" class="container-fluid py-5 text-light">
+                <h5 class="poppins-semibold contacto">¡Contáctanos!</h5>
+
+                <div class="row text-center">
+                    <div class="col-md-3 mb-4">
+                        <div class="info-box p-4 rounded shadow">
+                            <h5 class="poppins-semibold">Ubicación</h5>
+                            <p>Nuestra planta, oficinas y sucursales centrales
+                                se encuentran en Zitácuaro, Michoacán,
+                                Morelia.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="info-box p-4 rounded shadow">
+                            <h5 class="poppins-semibold">Teléfono</h5>
+                            <p>Para atención al cliente y distribución:<br> +52
+                                716 118 5678</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="info-box p-4 rounded shadow">
+                            <h5 class="poppins-semibold">Dirección</h5>
+                            <p>Calle de las Delicias #123, Av Revolución Sur,
+                                Zitácuaro, Michoacán, Morelia.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="info-box p-4 rounded shadow">
+                            <h5 class="poppins-semibold">Donde encontrarnos</h5>
+                            <p>Nuestros productos están disponibles en tiendas
+                                físicas y en línea.</p>
+                        </div>
+                    </div>
+                    <p class="txt">
+                        © 2024 YUMMI GOLDIES. Todos los derechos reservados.
+                        Prohibida la reproducción total o parcial del contenido
+                        sin autorización.
+                    </p>
+                </div>
+            </footer>
+
+        </div>
+
+        
+        <script>
+            function filterProducts() {
+                let filter = document.getElementById("navbarSearch").value.toLowerCase();
+                let productCards = document.querySelectorAll(".product-card");
+        
+                productCards.forEach(card => {
+                    let productName = card.querySelector(".card-title").textContent.toLowerCase();
+                    let productDescription = card.querySelector(".card-text").textContent.toLowerCase();
+        
+                    if (productName.includes(filter) || productDescription.includes(filter)) {
+                        card.parentElement.style.display = "block";  
+                    } else {
+                        card.parentElement.style.display = "none";  
+                    }
+                });
+            }
+        
+            document.getElementById("navbarSearch").addEventListener("keypress", function(event) {
+                if (event.key === "Enter") {
+                    event.preventDefault();
+                    filterProducts();
+                }
+            });
+        </script>
+        
+
+    </body>
+
+</html>
